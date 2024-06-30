@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log In / Sign Up</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function showLoginForm() {
+      document.getElementById('login-form').style.display = 'block';
+      document.getElementById('signup-form').style.display = 'none';
+    }
+
+    function showSignupForm() {
+      document.getElementById('signup-form').style.display = 'block';
+      document.getElementById('login-form').style.display = 'none';
+    }
+  </script>
+</head>
+<body>
+  <h1>Log In / Sign Up</h1>
+  <main>
+    <section class="auth-section">
+      <button class="login" onclick="showLoginForm()">Log In</button>
+      <button class="signup" onclick="showSignupForm()">Sign Up</button>
+    </section>
+
+    <section id="login-form" class="auth-form">
+      <h2>Log In</h2>
+      <form>
+        <label for="login-username">Username</label>
+        <input type="text" id="login-username" name="username" required />
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" name="password" required />
+        <button type="submit">Log In</button>
+      </form>
+    </section>
+
+    <section id="signup-form" class="auth-form" style="display: none;">
+      <h2>Sign Up</h2>
+      <form>
+        <label for="signup-username">Username</label>
+        <input type="text" id="signup-username" name="username" required />
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" name="password" required />
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" required />
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+
+    <button class="back" onclick="window.location.href='index.php'">Back to Home</button>
+  </main>
+</body>
+</html>
