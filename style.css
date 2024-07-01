@@ -20,6 +20,10 @@ body {
   font-family: "Bai Jamjuree", sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
+  background-image: url('background.png'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
 }
 
 h1 {
